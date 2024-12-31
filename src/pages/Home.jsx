@@ -1,4 +1,5 @@
 import About from "../component/About"
+import Experience from "../component/Experience"
 import Hero from "../component/Hero"
 import TechStack from "../component/TechStack"
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
 <About />
 <TechStack />
+<Experience />
     </div>
   )
 }

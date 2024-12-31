@@ -42,6 +42,42 @@ export const upperSkillsData = [
     },
 
     
+    {
+        id: "6",
+        title: "HTML",
+        color:"yellow",
+        icon: <TiHtml5 />
+       
+    },
+
+    {
+        id: "7",
+        title: "CSS",
+        icon: <TiCss3 />
+    },
+
+    {
+        id: "8",
+        title: "JAVASCRIPT",
+        color:"yellow",
+        icon: <BiLogoJavascript />
+    },
+
+    {
+        id: "9",
+        title: "TAILWINDCSS",
+        icon: <BiLogoTailwindCss />
+    },
+
+    {
+        id: "10",
+        title: "HTML",
+        color:"yellow",
+        icon: <TiHtml5 />
+       
+    },
+
+    
 ]
 
 export const lowerSkillsData = [
