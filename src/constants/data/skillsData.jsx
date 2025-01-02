@@ -12,7 +12,7 @@ export const upperSkillsData = [
         id: "1",
         title: "HTML",
         color:"yellow",
-        icon: <TiHtml5 />
+        icon: <TiHtml5 />,
        
     },
 

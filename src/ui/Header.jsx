@@ -44,7 +44,6 @@ const Header = () => {
 style={{boxShadow: "0px 1px 2px 0px #1018280D"}}>
     <h1  className=" font-bold text-xl  text-black">Contact Me</h1>
 </button>
-
 </div>
 
 </section>

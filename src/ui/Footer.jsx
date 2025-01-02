@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
-import { FaFacebook, FaTwitterSquare, FaLinkedinIn,FaGithubSquare } from "react-icons/fa";
+
+import AnimatedText from "../animations/AnimatedText";
 
 const footer_link = [
 
@@ -18,22 +19,6 @@ const footer_link = [
     },
 ]
 
-const icons = [
-    {
-        icon: <FaFacebook />
-    },
-    {
-        icon: <FaTwitterSquare />
-    },
-    {
-        icon: <FaLinkedinIn />
-    },
-    {
-        icon: <FaGithubSquare />
-    },
-
-    
-]
 
 
 const Footer = () => {
@@ -46,19 +31,23 @@ const Footer = () => {
     <ul className="flex flex-col md:flex-row gap-2">
         {
             footer_link.map((footer, index)=> (
-                <Link key={index} to={footer.path} className="text-white" >{footer.dispaly} </Link>
+                <Link key={index} to={footer.path} className="text-white" >
+                         <AnimatedText className="text-white">
+                    {footer.dispaly} 
+                    </AnimatedText>
+                    </Link>
             ))
         }
         
     </ul>
   
-    <ul className="flex gap-2">
-    {
-           icons.map((footer, index)=> (
-     <li  key={index}  className="text-xl text-white">{footer.icon}</li>
-            ))
-        }
-    </ul>
+<div className="">
+    <span className="text-white">
+        <AnimatedText className="text-white">
+        © Teitei Wisdpm 2025
+        </AnimatedText>
+    </span>
+</div>
 
 </section>
   )
