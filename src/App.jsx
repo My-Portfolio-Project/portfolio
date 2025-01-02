@@ -1,11 +1,10 @@
 
 
 import './App.css'
-import Contact from './component/Contact'
-import Rout from './rout/Rout'
-import Footer from './ui/Footer'
-import Header from './ui/Header'
 
+import Rout from './rout/Rout'
+
+ 
 
 
 function App() {
@@ -13,10 +12,9 @@ function App() {
 
   return (
     <div className=''>
-  <Header />
+
 <Rout />
-<Contact />
-<Footer />
+
     </div>
   )
 }

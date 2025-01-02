@@ -4,12 +4,10 @@ import { contactData } from "../constants/data/contactData";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const words = "You got here! I'm Teitei Wisdom, a fullstack software developer, technical writer, and coding tutor. I develop industry standard products that solve everyday problems, with an emphasis on user experience, accessibility and performance.".split(
-    " "
-  );
+  const words = "I am Wisdom, a full-stack software developer, technical writer, and coding tutor. I create industry-standard products that address everyday challenges, with a focus on user experience, accessibility, and performance.".split( " " );
 
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-center w-full text-center  h-screen gap-4">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-center w-full text-center  h-full  gap-4 pt-[3rem] md:pt-[5rem]">
 
       <div className="flex flex-row md:flex-col md:gap-6 gap-3 md:border-r-[2px] md:border-white items-center justify-center px-3">
 {
@@ -55,7 +53,7 @@ style={{boxShadow: "0px 1px 2px 0px #1018280D"}}>
     <h1  className=" font-bold text-base  text-black">Contact Me</h1>
 </button>
 
-<button className="bg-white w-[150px] h-[70px]  rounded-lg px-3 py-2 flex items-center justify-center"
+<button className="bg-white w-[170px] h-[70px]  rounded-lg px-3 py-2 flex items-center justify-center"
 style={{boxShadow: "0px 1px 2px 0px #1018280D"}}>
     <h1  className=" font-bold text-base  text-black">View Resume</h1>
 </button>

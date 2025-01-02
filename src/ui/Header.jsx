@@ -12,9 +12,9 @@ const header_link = [
     {   path: "#",
         dispaly:"About"
     },
-    {   path: "#",
-        dispaly:"Contact"
-    },
+    // {   path: "#",
+    //     dispaly:"Contact"
+    // },
 ]
 
 
@@ -23,7 +23,7 @@ const Header = () => {
   return (
 <section className="flex flex-row items-center justify-between  p-6 border-b-[2px] border-white w-full">
     <div className="">
-        <h1 className="text-white">Teitei Wisdom</h1>
+        <Link to='/' className="text-white">Teitei Wisdom</Link>
     </div>
     
 

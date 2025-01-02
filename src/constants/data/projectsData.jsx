@@ -10,7 +10,7 @@ export const projectsData = [
         id: "1",
         pics: flexnchill,
         title: "Flex&Chill",
-        desc: "",
+        desc: "FlexnChill is a movie website where you get to see trending movies and tv series",
         role: "Frontend Development",
         location: "Rivers, Nigeria 2024",
         github: "",

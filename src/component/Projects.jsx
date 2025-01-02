@@ -6,7 +6,7 @@ import AnimatedText from "../animations/AnimatedText"
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-end md:items-start md:flex-row  mb-14 justify-between w-full  h-full min-h-[400px]
+    <section className="flex flex-col items-end lg:items-start lg:flex-row  mb-14 justify-between w-full  h-full min-h-[400px]
     lg:px-4 p-3 md:p-0 gap-8 md:gap-5">
 
 <div className="flex  items-start md:items-end ">
