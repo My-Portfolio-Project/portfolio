@@ -6,29 +6,34 @@ import { motion } from "framer-motion";
 
 const TechStack = () => {
   return (
-    <section className="relative flex   -hidden w-full h-[400px] p-3
+    <section className="relative flex   w-full min-h-[400px] p-3 h-full
       justify-between items-center lg:px-4   gap-8 md:gap-5 lg:h-[500px] ">
       
       
 
-      <div className="flex flex-col-reverse md:flex-row gap-7 
+      <div className="flex flex-col md:flex-row gap-7 
       rounded-lg w-full">
 
+<div className="flex justify-end">
+        <HeadingText number="01" title="Skills" />
+      </div>
+
+
      
-        <div className="flex flex-col items-center justify-center h-full lg:max-w-[950px] w-full
-        space-y-3 rounded-lg border-r-2 border-white overflow-hidden px-2">
+        <div className="flex flex-col items-center justify-center h-full lg:h-[36vh] lg:max-w-[950px] w-full
+        space-y-3 rounded-lg border-l-2 border-white overflow-hidden px-2">
 
 
 
 <motion.div  
               initial={{ x: "0%"}}
               animate={{
-                x: "-100%",
+                x: "-15%",
               
               }}
-              transition={{ duration: 40,  ease:"linear", repeat:Infinity}}
+              transition={{ duration: 20,  ease:"linear", repeat:Infinity}}
     
-        className="flex flex-shrink-0 ">
+        className="flex flex-shrink-1 ">
 
 
 
@@ -55,14 +60,14 @@ const TechStack = () => {
 
 
     <motion.div  
-              initial={{ x: "-100%"}}
+              initial={{ x: "-15%"}}
               animate={{
                 x: "0%",
               
               }}
-              transition={{ duration: 40,  ease:"linear", repeat:Infinity}}
+              transition={{ duration: 20,  ease:"linear", repeat:Infinity}}
     
-        className="flex flex-shrink-0 ">
+        className="flex flex-shrink-1 ">
 
 
 
@@ -88,9 +93,7 @@ const TechStack = () => {
 
 
 
-      <div className="flex lg:pl-32 justify-end">
-        <HeadingText number="02" title="Skills" />
-      </div>
+   
 
 
 </div>

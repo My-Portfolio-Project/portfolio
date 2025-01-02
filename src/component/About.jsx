@@ -3,15 +3,13 @@ import HeadingText from "../resuseable-component/HeadingText";
 
 const About = () => {
   return (
-    <section className="flex flex-col md:flex-row  mb-5 justify-between 
+    <section className="flex flex-col-reverse items-end md:items-start md:flex-row  mb-5 justify-between min-h-[300px]
     lg:px-4 p-3 md:p-0 gap-8 md:gap-5">
       
-      <div className="flex ">
-       <HeadingText number="01" title="About" />
-      </div>
+    
 
       <div className="flex flex-col gap-3 lg:max-w-[950px]
-       w-full lg:h-[30vh] h-[35vh] border-l-[2px] border-white px-4 rounded-lg">
+       w-full lg:h-[30vh]  border-r-[2px] border-white px-4 rounded-lg">
         <h1 className="text-white ">
           <AnimatedText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -20,6 +18,10 @@ const About = () => {
              sunt in culpa qui officia deserunt mollit anim id est laborum.
           </AnimatedText>
         </h1>
+      </div>
+
+      <div className="flex  items-start md:items-end ">
+       <HeadingText number="02" title="About" />
       </div>
     </section>
   );

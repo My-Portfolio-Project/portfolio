@@ -22,13 +22,14 @@ const Hero = () => {
               className="relative  text-center"
               initial={{ opacity: 0.2 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: i * 0.1 }} 
+              transition={{ duration: 0.3, delay: i * 0.1 }} 
             >
               <span className="absolute opacity-10 text-center">{word}</span>
               {word}
             </motion.span>
           ))}
         </p>
+
       </div>
     </section>
   );

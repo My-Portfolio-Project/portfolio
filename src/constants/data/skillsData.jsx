@@ -2,6 +2,8 @@
 
 import { TiHtml5, TiCss3,  } from "react-icons/ti";
 import { BiLogoJavascript,BiLogoTailwindCss  } from "react-icons/bi";
+import { DiMongodb } from "react-icons/di";
+import { FaVuejs } from "react-icons/fa";
 
 export const upperSkillsData = [
 
@@ -44,9 +46,9 @@ export const upperSkillsData = [
     
     {
         id: "6",
-        title: "HTML",
+        title: "VUE",
         color:"yellow",
-        icon: <TiHtml5 />
+        icon:<FaVuejs />
        
     },
 
@@ -71,9 +73,9 @@ export const upperSkillsData = [
 
     {
         id: "10",
-        title: "HTML",
+        title: "Monogdb",
         color:"yellow",
-        icon: <TiHtml5 />
+        icon: <DiMongodb />
        
     },
 
