@@ -4,7 +4,7 @@ import { contactData } from "../constants/data/contactData";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const words = "I am Wisdom, a full-stack software developer, technical writer, and coding tutor. I create industry-standard products that address everyday challenges, with a focus on user experience, accessibility, and performance.".split( " " );
+  const words = "You made it here! I'm a full-stack software developer who builds industry-standard solutions to tackle everyday challenges. I assist tech companies in enhancing their products by designing user-focused and visually captivating cross-platform applications that align perfectly with their business objectives.".split( " " );
 
   return (
     <section className="flex flex-col-reverse md:flex-row items-center justify-center w-full text-center  h-full  gap-4 pt-[3rem] md:pt-[5rem]">
@@ -25,10 +25,13 @@ const Hero = () => {
       </div>
 
       <div  className="flex flex-col items-center">
+
         <h1 className="lg:text-7xl md:text-5xl text-4xl font-extrabold text-white ont-normal">
-          Fullstack Software Developer
-          <br />
-          Technical Writer | Coding Tutor
+
+        Hello
+        I&apos;m <span className="">Tei-tei Wisdom.  </span> <br />
+           Fullstack Developer 💻
+        
         </h1>
 
         <p className="flex gap-2 flex-wrap w-full text-center py-10 items-center justify-center text-white   px-8">

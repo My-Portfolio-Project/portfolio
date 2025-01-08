@@ -27,11 +27,16 @@ const ProjectDetails = () => {
 style={{boxShadow: "0px 1px 2px 0px #1018280D"}}>
     <h1  className=" font-bold text-base  text-black">Contact Me</h1>
 </button>
-
-
  </div>
 
- <ul className="flex flex-col md:flex-row gap-6 items-start">
+ <h1 className="text-white opacity-45 text-4xl pb-8">
+    <AnimatedText >
+        {item.desc}
+    </AnimatedText>
+ </h1>
+
+
+ <ul className="flex flex-col md:flex-row gap-6 items-start ">
 
 <li className="text-white ">Role: <span>{item.role}</span> </li>
 
@@ -41,11 +46,11 @@ style={{boxShadow: "0px 1px 2px 0px #1018280D"}}>
 
 </ul>
 
- <h1 className="text-white opacity-45 text-4xl">
-    <AnimatedText >
-        {item.desc}
-    </AnimatedText>
- </h1>
+
+
+ <div className="md:px-10 w-full relative  group">
+    <img src={item.pics}  className="w-full h-full" />
+ </div>
 
 
 
