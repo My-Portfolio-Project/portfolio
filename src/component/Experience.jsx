@@ -20,9 +20,12 @@ const Experience = () => {
                      justify-between border-b-[1px] border-gray-300 ">
 
                         <div className="flex flex-col gap-1 text_background">
-              <span className="text-white text-3xl gap-2" > <AnimatedText   >{e.title} As A</AnimatedText> </span> 
+              <span className="text-white text-3xl gap-2" > <AnimatedText >{e.title} As A</AnimatedText> </span> 
               <span className="text-white text-3xl gap-2" >   <AnimatedText className="text-white">{e.role}- {e.location}</AnimatedText> </span> 
-              <span className="text-white text-base gap-2 pb-10  pt-5 md:w-[90%] opacity-65" >      <AnimatedText className="text-white py-3">{e.text}</AnimatedText> </span> 
+           {e.pointOne &&   <span className="text-white text-base gap-2 pb-10  pt-5 md:w-[90%] opacity-65" >      <AnimatedText className="text-white py-3">{e.pointOne}</AnimatedText> </span>  }
+           {e.pointTwo &&   <span className="text-white text-base gap-2 pb-10  pt-5 md:w-[90%] opacity-65" >      <AnimatedText className="text-white py-3">{e.pointTwo}</AnimatedText> </span>  }
+           {e.pointThree &&   <span className="text-white text-base gap-2 pb-10  pt-5 md:w-[90%] opacity-65" >      <AnimatedText className="text-white py-3">{e.pointThree}</AnimatedText> </span>  }
+           {e.pointFour &&   <span className="text-white text-base gap-2 pb-10  pt-5 md:w-[90%] opacity-65" >      <AnimatedText className="text-white py-3">{e.pointFour}</AnimatedText> </span>  }
 
                         </div>
 

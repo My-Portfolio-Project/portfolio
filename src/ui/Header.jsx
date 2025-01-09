@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 
 const header_link = [
 
-    {   path: "#",
+    {   path: "#hero",
         dispaly:"Home"
     },
-    {   path: "#",
+    {   path: "#project",
         dispaly:"Projects"
     },
-    {   path: "#",
+    {   path: "#about",
         dispaly:"About"
     },
     // {   path: "#",
@@ -23,15 +23,15 @@ const Header = () => {
   return (
 <section className="flex flex-row items-center justify-between  p-6 border-b-[2px] border-white w-full">
     <div className="">
-        <Link to='/' className="text-white">Teitei Wisdom</Link>
+        <Link to='/' className="text-white font-extrabold">Teitei Wisdom</Link>
     </div>
     
 
     <div className="md:block hidden" >
     <ul className="flex flex-col md:flex-row gap-2">
         {
-            header_link.map((footer, index)=> (
-                <Link key={index} to={footer.path} className="text-white" >{footer.dispaly} </Link>
+            header_link.map((h, index)=> (
+                <a key={index} href={h.path} className="text-white" >{h.dispaly} </a>
             ))
         }
         

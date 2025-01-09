@@ -13,12 +13,14 @@ export const projectsData = [
         desc: "FlexnChill is a movie website where you get to see trending movies and tv series",
         role: "Frontend Development",
         location: "Rivers, Nigeria 2024",
-        github: "",
+      
         year: "2024",
         iconOne: <FaReact color="blue" />,
          iconTwo: <BiLogoTypescript  color="green"  />,
          iconThree: <BiLogoTailwindCss color="blue" />,
          iconFour: <FiFramer  color="blue" />,
+         preview:"https://flexnchills.vercel.app/",
+         github_link: "https://github.com/Ajinormotor/flexnchill.git"
     },
 
     {
@@ -28,11 +30,17 @@ export const projectsData = [
         desc: "",
         role: "Frontend Development",
         location: "Rivers, Nigeria 2024",
-        github: "",
+    
         year: "2024",
         iconOne: <FaReact color="blue" />,
         iconTwo: <BiLogoTypescript color="green"  />,
         iconThree: <BiLogoTailwindCss color="blue"  />,
-        iconFour: <FiFramer  color="blue" />
+        iconFour: <FiFramer  color="blue" />,
+        pointOne: "",
+        pointTwo: "",
+        pointThree: "",
+        pointFour: "",
+        preview:"https://ajino-stores.vercel.app/",
+         github_link: "https://github.com/Ajinormotor/ajno_stores.git"
     },
 ]

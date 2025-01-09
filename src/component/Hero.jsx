@@ -3,18 +3,20 @@ import { motion } from "framer-motion";
 import { contactData } from "../constants/data/contactData";
 import { Link } from "react-router-dom";
 
+import resumePDf from "../assets/Teitei_CV.pdf"
+
 const Hero = () => {
-  const words = "You made it here! I'm a full-stack software developer who builds industry-standard solutions to tackle everyday challenges. I assist tech companies in enhancing their products by designing user-focused and visually captivating cross-platform applications that align perfectly with their business objectives.".split( " " );
+  const words = "You made it here! I'm a frontend software developer who builds industry-standard solutions to tackle everyday challenges. I assist tech companies in enhancing their products by designing user-focused and visually captivating cross-platform applications that align perfectly with their business objectives.".split( " " );
 
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-center w-full text-center  h-full  gap-4 pt-[3rem] md:pt-[5rem]">
+    <section id="hero" className="flex flex-col-reverse md:flex-row items-center justify-center w-full text-center  h-full  gap-4 pt-[3rem] md:pt-[5rem]">
 
       <div className="flex flex-row md:flex-col md:gap-6 gap-3 md:border-r-[2px] md:border-white items-center justify-center px-3">
 {
   contactData.map((h,index) => {
 
     return (
-      <Link className=""  key={index}>
+      <Link className=" hover:scale-75"  to={h.link} key={index}>
         <motion.h1 className="text-white text-2xl">
             {h.icon}
         </motion.h1>
@@ -30,7 +32,7 @@ const Hero = () => {
 
         Hello
         I&apos;m <span className="">Tei-tei Wisdom.  </span> <br />
-           Fullstack Developer 💻
+           Frontend Developer 💻
         
         </h1>
 
@@ -51,14 +53,14 @@ const Hero = () => {
 
         <div className="flex gap-3">
 
-<button className="bg-white w-[150px] h-[70px]  rounded-lg px-6 py-2 flex items-center justify-center"
+<button className="bg-white w-[150px] h-[70px]  rounded-lg px-6 py-2 flex items-center justify-center hover:bg-transparent group hover:border-[2px] hover:border-white"
 style={{boxShadow: "0px 1px 2px 0px #1018280D"}}>
-    <h1  className=" font-bold text-base  text-black">Contact Me</h1>
+    <a href="#contact"  className=" font-bold text-base  text-black group-hover:text-white">Contact Me</a>
 </button>
 
-<button className="bg-white w-[170px] h-[70px]  rounded-lg px-3 py-2 flex items-center justify-center"
+<button className="bg-white w-[170px] h-[70px]  rounded-lg px-3 py-2 flex items-center justify-center hover:bg-transparent group hover:border-[2px] hover:border-white"
 style={{boxShadow: "0px 1px 2px 0px #1018280D"}}>
-    <h1  className=" font-bold text-base  text-black">View Resume</h1>
+    <a href={resumePDf}  className=" font-bold text-base  text-black group-hover:text-white">View Resume</a>
 </button>
 
 </div>

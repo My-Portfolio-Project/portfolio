@@ -10,7 +10,7 @@ import Footer from "../ui/Footer"
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="flx flex-col gap-4">
    <Header />
       <Hero />
       <TechStack />

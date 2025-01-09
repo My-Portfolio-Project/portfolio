@@ -1,9 +1,16 @@
 
 
 import { TiHtml5, TiCss3,  } from "react-icons/ti";
-import { BiLogoJavascript,BiLogoTailwindCss  } from "react-icons/bi";
-import { DiMongodb } from "react-icons/di";
-import { FaVuejs } from "react-icons/fa";
+import { BiLogoJavascript,BiLogoTailwindCss, BiLogoTypescript  } from "react-icons/bi";
+import { DiMongodb, } from "react-icons/di";
+import { FaVuejs,  } from "react-icons/fa";
+
+
+import { BiGitBranch} from 'react-icons/bi';
+import {  FaNodeJs} from 'react-icons/fa';
+import {GrReactjs} from 'react-icons/gr';
+import {  SiExpress} from 'react-icons/si';
+
 
 export const upperSkillsData = [
 
@@ -37,9 +44,9 @@ export const upperSkillsData = [
 
     {
         id: "5",
-        title: "HTML",
+        title: "Typescript",
         color:"yellow",
-        icon: <TiHtml5 />
+        icon: <BiLogoTypescript/>
        
     },
 
@@ -54,21 +61,21 @@ export const upperSkillsData = [
 
     {
         id: "7",
-        title: "CSS",
-        icon: <TiCss3 />
+        title: "Express",
+        icon: <SiExpress />
     },
 
     {
         id: "8",
-        title: "JAVASCRIPT",
+        title: "Nodejs",
         color:"yellow",
-        icon: <BiLogoJavascript />
+        icon: <FaNodeJs />
     },
 
     {
         id: "9",
-        title: "TAILWINDCSS",
-        icon: <BiLogoTailwindCss />
+        title: "Github",
+        icon: <BiGitBranch />
     },
 
     {
@@ -79,80 +86,11 @@ export const upperSkillsData = [
        
     },
 
-    
-]
-
-export const lowerSkillsData = [
-
-
     {
-   
+        id: "11",
         title: "React",
         color:"yellow",
-        icon: <TiHtml5 />
-       
-    },
-
-    {
-        
-        title: "Nextjs",
-        icon: <TiCss3 />
-    },
-
-    {
-     
-        title: "Nodejs",
-        color:"yellow",
-        icon: <BiLogoJavascript />
-    },
-
-    {
-        
-        title: "Laravel",
-        icon: <BiLogoTailwindCss />
-    },
-
-    {
-  
-        title: "Vue",
-        color:"yellow",
-        icon: <TiHtml5 />
-       
-    },
-
-    
-    {
-      
-        title: "React",
-        color:"yellow",
-        icon: <TiHtml5 />
-       
-    },
-
-    {
-     
-        title: "Nextjs",
-        icon: <TiCss3 />
-    },
-
-    {
-     
-        title: "Nodejs",
-        color:"yellow",
-        icon: <BiLogoJavascript />
-    },
-
-    {
-    
-        title: "Laravel",
-        icon: <BiLogoTailwindCss />
-    },
-
-    {
-        
-        title: "Vue",
-        color:"yellow",
-        icon: <TiHtml5 />
+        icon: <GrReactjs />
        
     },
 
