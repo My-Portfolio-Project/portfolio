@@ -10,7 +10,7 @@ import { BiGitBranch} from 'react-icons/bi';
 import {  FaNodeJs} from 'react-icons/fa';
 import {GrReactjs} from 'react-icons/gr';
 import {  SiExpress} from 'react-icons/si';
-
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const upperSkillsData = [
 
@@ -91,6 +91,13 @@ export const upperSkillsData = [
         title: "React",
         color:"yellow",
         icon: <GrReactjs />
+       
+    },
+    {
+        id: "12",
+        title: "Netxjs",
+        color:"yellow",
+        icon: <TbBrandNextjs />
        
     },
 

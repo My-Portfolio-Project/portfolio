@@ -7,10 +7,10 @@ export const experienceData = [
         role: "Frontend Engineer",
         location:"Nigeria(Remote)",
         date:"June 2024 - Present",
-        pointOne: "Collaborated with design team to conert figma designs",
-        pointTwo: "",
-        pointThree: "",
-        pointFour: "",
+        pointOne: "- Worked as a frontend engineer using Nextjs",
+        pointTwo: "- API integration",
+        pointThree: "- Collaborated with design team to convert figma designs",
+        pointFour: "- Converted dashboard designs",
     },
 
     {
@@ -18,10 +18,10 @@ export const experienceData = [
         role: "Frontend Engineer",
         location:"Nigeria(Remote)",
         date:"June 2024 - September 2024",
-        pointOne: "Collaborated with design team to conert figma designs",
-        pointTwo: "",
-        pointThree: "",
-        pointFour: "",
+        pointOne: "- Worked as a frontend engineer using Reactjs ",
+        pointTwo: "- Collaborated with design team to convert figma designs",
+        pointThree: "- API intergation",
+        pointFour: "- Converted dashboard designs and api integration",
     },
 
 ]

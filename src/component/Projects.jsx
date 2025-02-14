@@ -37,7 +37,7 @@ projectsData.map((e) => {
           </h1>
 
 
-<div className="flex flex-col md:flex-row justify-between items-start md:border-t-[0.5px]  border-white
+<div className="flex flex-col md:flex-row flex-wrap justify-between items-start md:border-t-[0.5px]  border-white
 md:items-center gap-2">
 
 <ul className="flex space-x-1 p-2">
@@ -49,14 +49,27 @@ md:items-center gap-2">
         </ul>
 
         <ul className="flex ">
-        <li className="text-white">{e.role} </li>
+        <li className="text-white underline">{e.role} </li>
         </ul>
 
      
         <ul className="flex">
-        <li className="text-white"> {e.year} </li>
+        <li className="text-white underline"> {e.year} </li>
         </ul>
+
+      
 </div>
+
+<div className="flex flex-col gap-2">
+                {e.task.map((t, index) => (
+                  <ul key={index} className="text-white flex flex-col list-inside">
+                    <li>{t.taskOne}</li>
+                    <li>{t.taskTwo}</li>
+                    <li>{t.taskThree}</li>
+                  </ul>
+                ))}
+              </div>
+
       </div>
 
     </div>

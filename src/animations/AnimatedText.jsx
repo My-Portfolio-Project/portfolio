@@ -10,7 +10,7 @@ const AnimatedText = ({ children, type }) => {
     margin: "0px 100px -120px 0px",
   });
 
-  // Ensure `children` is processed only if it's a string
+
   const textContent = typeof children === "string" ? children : String(children);
 
   if (type === "BIGTEXT") {
