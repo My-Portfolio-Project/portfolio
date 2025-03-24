@@ -2,6 +2,19 @@
 
 
 export const experienceData = [
+
+
+    {
+        title: "AremxyPlug",
+        role: "Frontend Engineer",
+        location:"Nigeria(Remote)",
+        date:"Feb 2025 - March 2024",
+        pointOne: "- Worked as a frontend engineer using Reactjs ",
+        pointTwo: "- Collaborated with design team to convert figma designs(dashboard",
+        pointThree: "-assisted in  API intergation",
+  
+    },
+
     {
         title: "TheInternPlace",
         role: "Frontend Engineer",
