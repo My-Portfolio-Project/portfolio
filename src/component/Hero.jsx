@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import resumePDf from "../assets/Teitei_CV.pdf"
 
 const Hero = () => {
-  const words = "You made it here! I'm a frontend software developer who builds industry-standard solutions to tackle everyday challenges. I assist tech companies in enhancing their products by designing user-focused and visually captivating cross-platform applications that align perfectly with their business objectives.".split( " " );
+  const words = "You made it here! I'm a fullstack software engineer who builds industry-standard solutions to tackle everyday challenges. I assist tech companies in enhancing their products by designing user-focused and visually captivating cross-platform applications that align perfectly with their business objectives.".split( " " );
 
   return (
     <section id="hero" className="flex flex-col-reverse md:flex-row items-center justify-center w-full text-center  h-full  gap-4 pt-[3rem] md:pt-[5rem]">
@@ -32,7 +32,7 @@ const Hero = () => {
 
         Hello
         I&apos;m <span className="">Tei-tei Wisdom.  </span> <br />
-           Frontend Developer 💻
+           Software Engineer💻
         
         </h1>
 

@@ -26,7 +26,9 @@ export const projectsData = [
             { taskOne: "- Search filter functionality"},
             { taskTwo: "- Add to favorites functionality"},
             { taskThree: "- Pagination functionality"},
-         ]
+         ],
+   bgColor: '#1E293B', 
+textColor: '#F8FAFC' 
 
     },
 
@@ -53,6 +55,31 @@ export const projectsData = [
             { taskOne: "- Created with Nextjs, redux and Typescript"},
             { taskTwo: "- Add to cart  functionality"},
             { taskThree: "- Pagination functionality "},
-         ]
+         ],
+         bgColor: '#FACC15',
+textColor: '#1E293B'
+    },
+      {
+        id: "3",
+        pics: flexnchill,
+        title: "Flex&Chilling",
+        desc: "FlexnChill is a movie website where you get to see trending movies and tv series",
+        role: "Frontend Development",
+        location: "Rivers, Nigeria 2024",
+        year: "2024",
+        iconOne: <FaReact color="#f9f9f9" />,
+         iconTwo: <BiLogoTypescript  color="#f9f9f9" />,
+         iconThree: <BiLogoTailwindCss color="#f9f9f9" />,
+         iconFour: <FiFramer  color="#f9f9f9" />,
+         preview:"https://flexnchills.vercel.app/",
+         github_link: "https://github.com/Ajinormotor/flexnchill.git",
+         task: [
+            { taskOne: "- Search filter functionality"},
+            { taskTwo: "- Add to favorites functionality"},
+            { taskThree: "- Pagination functionality"},
+         ],
+   bgColor: '#1E293B', 
+textColor: '#F8FAFC' 
+
     },
 ]

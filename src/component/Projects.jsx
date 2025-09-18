@@ -10,7 +10,7 @@ const Projects = () => {
     lg:px-4 p-3 md:p-0 gap-8 md:gap-5 my-[4rem]">
 
 <div className="flex  items-start md:items-end ">
-       <HeadingText number="03" title="Project" />
+       <HeadingText number="02" title="Project" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-[950px] gap-7

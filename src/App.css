@@ -38,3 +38,23 @@ body{
 
   ) ;
 }
+
+
+/* styles.css or your CSS file */
+.intro {
+  position: relative; /* Ensure intro can be pinned */
+  min-height: 100px; /* Ensure intro has height for pinning */
+}
+
+.card {
+  position: relative; /* Ensure card can be used as a trigger */
+}
+
+.card-inner {
+  position: relative; /* Ensure card-inner can be translated */
+  transform: translateY(0); /* Initial transform for animation */
+}
+
+.outro {
+  position: relative; /* Ensure outro can be used as an end trigger */
+}

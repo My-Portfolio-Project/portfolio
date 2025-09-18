@@ -1,16 +1,42 @@
+ 
+ 
+import { useRef } from "react"
 import AnimatedText from "../animations/AnimatedText"
 import { experienceData } from "../constants/data/expereinceData"
 import HeadingText from "../resuseable-component/HeadingText"
+import {motion, useScroll, useTransform } from "framer-motion"
 
 
 const Experience = () => {
+
+  const container = useRef(null)
+  // const ref = useRef(null)
+
+  const {scrollYProgress} = useScroll({
+    target: container,
+    offset: ['start start', 'end end']
+  })
+
+ const index = 1
+const targetScale =  1 - (experienceData.length ) *  0.04;
+const step = 1 /experienceData.length;
+
+ const range =  [index * step, 1]
+
+
+  const scale = useTransform(scrollYProgress, range, [1, targetScale])
+
+
   return (
     <section className="flex flex-col-reverse items-end md:items-start md:flex-row  mb-14 justify-between w-full  h-full 
-    lg:px-4 p-3 md:p-0 gap-8 md:gap-5">
+    lg:px-4 p-3 md:p-0 gap-8 md:gap-5 relative">
 
 
 
-      <div className="flex flex-col gap-3 lg:max-w-[950px] 
+      <motion.div 
+      ref={container}
+      style={{scale}}
+      className="sticky top-10  gap-3 lg:max-w-[950px] 
        w-full  border-r-[2px] border-white px-4 rounded-lg">
 
         {
@@ -30,7 +56,8 @@ const Experience = () => {
                         </div>
 
                         <div className="w-full md:max-w-[250px]">
-                        <span className="text-white text-xl font-bold gap-2" >    <AnimatedText className="text-white">{e.date}</AnimatedText> </span> 
+                        <span className="text-white text-xl font-bold gap-2" > 
+                             <AnimatedText className="text-white">{e.date}</AnimatedText> </span> 
                         </div>
 
                     </div>
@@ -38,9 +65,9 @@ const Experience = () => {
             })
         }
 
-      </div>
+      </motion.div>
 
-      <div className="flex  items-start md:items-end ">
+      <div className="md:sticky flex  items-start md:items-end " >
        <HeadingText number="04" title="Expereience" />
       </div>
 

@@ -12,7 +12,7 @@ const About = () => {
        w-full h-full lg:h-[50vh]  border-r-[2px] border-white px-4 rounded-lg">
         <h1 className="text-white text-xl font-medium opacity-85 ">
           <AnimatedText>
-          I am a frontend developer with over 3 years of experience crafting modern, responsive websites and web applications for
+          I am a Software Engineer with over 3 years of experience crafting modern, responsive websites and web applications for
            businesses across diverse industries. With expertise in both front-end technologies, I deliver seamless and user-friendly digital solutions. I also provide consultative services, 
           helping businesses harness technology to scale their operations and achieve their objectives through strategic partnerships.
           </AnimatedText>
@@ -28,7 +28,7 @@ const About = () => {
       </div>
 
       <div className="flex  items-start md:items-end ">
-       <HeadingText number="02" title="About" />
+       <HeadingText number="03" title="About" />
       </div>
 
     </section>

@@ -3,8 +3,20 @@
 
 export const experienceData = [
 
+      {
+        id: '1',
+        title: "Sonasdigital",
+        role: "Fullstack Engineer",
+        location:"Nigeria(Remote)",
+        date:"June 2025 - Present",
+        pointOne: "- Worked as a fullstack engineer  ",
+        pointTwo: "- Collaborated with design team to convert figma designs(dashboard",
+        pointThree: "-assisted in  API intergation",
+  
+    },
 
-    {
+
+    {    id: '2',
         title: "AremxyPlug",
         role: "Frontend Engineer",
         location:"Nigeria(Remote)",
@@ -15,7 +27,7 @@ export const experienceData = [
   
     },
 
-    {
+    {     id: '3',
         title: "TheInternPlace",
         role: "Frontend Engineer",
         location:"Nigeria(Remote)",
@@ -26,7 +38,7 @@ export const experienceData = [
         pointFour: "- Converted dashboard designs",
     },
 
-    {
+    {    id: '4',
         title: "NetCraft",
         role: "Frontend Engineer",
         location:"Nigeria(Remote)",
