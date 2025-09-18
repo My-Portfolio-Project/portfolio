@@ -68,7 +68,7 @@ const Card = ({ e, progress, range, targetScale }) => {
 
             {/* Description */}
             <h1
-              className="text-sm sm:text-base md:text-lg lg:text-xl opacity-90"
+              className="text-sm sm:text-base md:text-lg lg:text-xl opacity-80"
               style={{ color: e.textColor }}
             >
               {e.desc}
@@ -158,6 +158,7 @@ const TestingProject = () => {
           );
         })}
       </div>
+
     </div>
   );
 };
