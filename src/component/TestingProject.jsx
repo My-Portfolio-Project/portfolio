@@ -1,26 +1,21 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { projectsData } from "../constants/data/projectsData";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import HeadingText from "../resuseable-component/HeadingText";
 
-
 // Single Card
 const Card = ({ e, progress, range, targetScale }) => {
   const ref = useRef(null);
-
 
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
   });
 
-
   const imageScale = useTransform(scrollYProgress, [0, 0], [2, 1]);
-
-
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
@@ -30,9 +25,7 @@ const Card = ({ e, progress, range, targetScale }) => {
       className="sticky top-10 w-full  p-3  border-l-2 border-white 
        rounded-2xl overflow-hidden group "
     >
-
       <Link to={`/projectdetails/${e.id}`}>
-
         <div
           className="relative space-y-4 cursor-pointer p-6 rounded-2xl 
           shadow-2xl transition duration-500 flex flex-col md:flex-row gap-3"
@@ -44,102 +37,129 @@ const Card = ({ e, progress, range, targetScale }) => {
           {/* Image */}
           <motion.div
             style={{ scale: imageScale }}
-            className="h-[200px] md:h-[300px] w-full md:max-w-[50%] rounded-xl overflow-hidden p-2"
+            className="h-[200px] md:h-[300px] w-full md:max-w-[50%] rounded-xl overflow-hidden "
           >
             <img
               src={e.pics}
               alt="project-title"
-              className="w-full h-full  object-cover group-hover:scale-[1.1]
+              className="w-full h-full  object-cover group-hover:scale-[1.1] rounded-lg
                transition-transform duration-500 ease-out"
             />
           </motion.div>
 
+          <motion.div className="md:max-w-[50%] w-full flex flex-col gap-2 ">
+            <div className="flex items-center justify-between w-full">
 
-<motion.div
-className="md:max-w-[50%] w-full flex flex-col gap-2 ">
-          {/* Title */}
-          <h1
-            className="md:text-4xl text-2xl font-semibold"
-            style={{ color: e.textColor }}
-          >
-            {e.title}
-          </h1>
+       
+            {/* Title */}
+            <h1
+              className="md:text-4xl text-2xl font-semibold"
+              style={{ color: e.textColor }}
+            >
+              {e.title}
+            </h1>
 
-          {/* Info */}
-          <div
-            className="flex flex-col md:flex-row flex-wrap justify-between items-start md:border-t pt-2 md:items-center gap-2"
-            style={{ borderColor: e.textColor }}
-          >
-            <ul className="flex space-x-2 text-2xl">
-              <li>{e.iconOne}</li>
-              <li>{e.iconTwo}</li>
-              <li>{e.iconThree}</li>
-              <li>{e.iconFour}</li>
-            </ul>
+            {/* <div className={`shadow-md rounded-lg px-2 py-1`}>
+              {e.tag}
+            </div> */}
 
-            <ul>
-              <li className="underline">{e.role}</li>
-            </ul>
 
-            <ul>
-              <li className="underline">{e.year}</li>
-            </ul>
-          </div>
+                 </div>
 
-          {/* Tasks */}
-          <div className="flex flex-col gap-2">
-            {e.task.map((t, idx) => (
-              <ul key={idx} className="list-inside space-y-1">
-                <li>{t.taskOne}</li>
-                <li>{t.taskTwo}</li>
-                <li>{t.taskThree}</li>
+            {/* Description */}
+            <h1
+              className="text-sm sm:text-base md:text-lg lg:text-xl opacity-90"
+              style={{ color: e.textColor }}
+            >
+              {e.desc}
+            </h1>
+
+            {/* Info */}
+            <div
+              className="flex flex-col md:flex-row flex-wrap justify-between items-start
+              pt-2 md:items-center gap-2"
+              style={{ borderColor: e.textColor }}
+            >
+              <ul className="flex space-x-2 text-2xl">
+                <li>{e.iconOne}</li>
+                <li>{e.iconTwo}</li>
+                <li>{e.iconThree}</li>
+                <li>{e.iconFour}</li>
               </ul>
-            ))}
-          </div>
-          </motion.div>
 
+              <ul>
+                <li>{e.role}</li>
+              </ul>
+
+              <ul>
+                <li>{e.year}</li>
+              </ul>
+            </div>
+          </motion.div>
         </div>
       </Link>
-
     </motion.div>
   );
 };
 
-
-
+// Main Component
 const TestingProject = () => {
   const container = useRef(null);
+  const [activeTab, setActiveTab] = useState("Web App");
 
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start start", "end end"],
   });
 
+  // Filter projects by tag
+  const filteredProjects = projectsData.filter(
+    (project) => project.tag === activeTab
+  );
+
   return (
-    <div ref={container} className="relative min-h-[130vh] ">
-      {projectsData.map((e, index) => {
-        const targetScale = 1 - (projectsData.length - index) * 0.05;
+    <div className="w-full">
+      {/* Tabs */}
+      <div className="flex justify-center gap-4 mb-6">
+        {["Web App", "Mobile App"].map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`px-4 py-2 rounded-full font-medium transition ${
+              activeTab === tab
+                ? "bg-blue-600 text-white"
+                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+            }`}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
 
-      
-        const step = 1 / projectsData.length;
-        const range = [index * step, 1];
+      {/* Cards */}
+      <div ref={container} className="relative min-h-[130vh]">
+        {filteredProjects.map((e, index) => {
+          const targetScale =
+            1 - (filteredProjects.length - index) * 0.05;
 
-        return (
-          
-          <Card
-            key={e.id}
-            e={e}
-            index={index}
-            total={projectsData.length}
-            range={range}
-            targetScale={targetScale}
-            progress={scrollYProgress}
-          />
-        );
-      })}
+          const step = 1 / filteredProjects.length;
+          const range = [index * step, 1];
+
+          return (
+            <Card
+              key={e.id}
+              e={e}
+              index={index}
+              total={filteredProjects.length}
+              range={range}
+              targetScale={targetScale}
+              progress={scrollYProgress}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
-
 
 export default TestingProject;

@@ -95,7 +95,7 @@ export const upperSkillsData = [
     },
     {
         id: "12",
-        title: "Netxjs",
+        title: "Nextjs",
         color:"yellow",
         icon: <TbBrandNextjs />
        
