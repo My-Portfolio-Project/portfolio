@@ -21,7 +21,8 @@ const TechStack = () => {
               return (
                 <div
                   key={index}
-                  className={`shadow-lg rounded-lg flex flex-col items-center justify-center w-[200px] h-[150px]
+                  className={`shadow-lg rounded-lg flex flex-col items-center justify-center
+                     w-[200px] h-[120px]
                        bg-zinc-950 
                        ${largeWidth && "w-[220px] h-[00px] border-[1px] border-white my-2" }`}
                 >

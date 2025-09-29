@@ -40,9 +40,7 @@ npm install
 npm run dev
 
 
-The site will be available at http://teiteis-portfolio.vercel.app
-
-📸 Screenshots
+The site will be available at 🌐 https://teiteis-portfolio.vercel.app/
 
 
 🌐 Live Demo
@@ -56,7 +54,7 @@ Feel free to fork this repo and submit a pull request.
 
 📬 Contact
 
-Email: your.email@example.com
+Email: teiteiwisdom@gmail.com
 
 LinkedIn: Your Name
 

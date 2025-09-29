@@ -1,26 +1,34 @@
 
-import { FaReact } from "react-icons/fa";
-import flexnchill from "/flexnchill_hommepage.png"
-import ajinostores from "../../../public/ajinostores_hero.png"
+// import { FaReact } from "react-icons/fa";
+
+import timscusine from "../../../public/timcusine.png"
 import jobtracker from '../../../public/JobTracker.png'
-import { BiLogoTailwindCss , BiLogoTypescript  } from "react-icons/bi";
-import { FiFramer, } from "react-icons/fi";
-import { TbBrandNextjs } from "react-icons/tb";
+// import { BiLogoTailwindCss } from "react-icons/bi";
+// import { FiFramer, } from "react-icons/fi";
+// import { TbBrandNextjs } from "react-icons/tb";
 
 
 export const projectsData = [
     {
         id: "1",
         pics: jobtracker,
-        title: "JobTracker (Web)",
+        title: "JobTracker",
         desc: "A fullstack web application for job seekers to track their job applications across different stages (Wishlist, Applied, Interviewing, Offers, etc.) in a drag-and-drop board format, similar to Huntr. Each job is represented as an editable card.",
         role: "Backend Development",
         location: "Rivers, Nigeria 2024",
         year: "2025",
-        iconOne: <FaReact color="#f9f9f9" />,
-         iconTwo: <BiLogoTypescript  color="#f9f9f9" />,
-         iconThree: <BiLogoTailwindCss color="#f9f9f9" />,
-         iconFour: <FiFramer  color="#f9f9f9" />,
+      //   iconOne: <FaReact color="#f9f9f9" />,
+        iconOne: 'React',
+        iconOneColor: '#e3f2fd"',
+         // iconTwo: <BiLogoTypescript  color="#f9f9f9" />,
+         iconTwo: 'TailwindCss',
+           iconTwoColor: '',
+         // iconThree: <BiLogoTailwindCss color="#f9f9f9" />,
+         iconThree: 'Mongodb',
+         iconThreeColor: '',
+         // iconFour: <FiFramer  color="#f9f9f9" />,
+         iconFour: 'Nodejs',
+         iconFourColor: '',
          preview:"https://project-jobtracker.netlify.app/",
          github_link: "https://github.com/Ajinormotor/flexnchill.git",
          task: [
@@ -36,17 +44,21 @@ tag: 'Web App'
   
     {
         id: "2",
-        pics: ajinostores,
-        title: "AJinoStores",
-        desc: "n ecommerce store",
+        pics: timscusine,
+        title: "Timscusine",
+         desc: "A fullstack web application for users to buy foods and place orders ",
         role: "Frontend Development",
         location: "Rivers, Nigeria 2024",
     
         year: "2024",
-        iconOne: <TbBrandNextjs  color="#f9f9f9"  />,
-        iconTwo: <BiLogoTypescript color="#f9f9f9"   />,
-        iconThree: <BiLogoTailwindCss color="#f9f9f9"   />,
-        iconFour: <FiFramer  color="#f9f9f9"  />,
+      //   iconOne: <TbBrandNextjs  color="#f9f9f9"  />,
+           iconOne: 'React',
+      //   iconTwo: <BiLogoTypescript color="#f9f9f9"   />,
+            iconTwo: 'TailwindCss',
+      //   iconThree: <BiLogoTailwindCss color="#f9f9f9"   />,
+           iconThree: 'Mongodb',
+      //   iconFour: <FiFramer  color="#f9f9f9"  />,
+            iconFour: 'Nodejs',
         pointOne: "",
         pointTwo: "",
         pointThree: "",
@@ -62,44 +74,25 @@ tag: 'Web App'
 textColor: '#1E293B',
 tag: 'Web App',
     },
-      {
-        id: "3",
-        pics: flexnchill,
-        title: "Flex&Chilling",
-        desc: "FlexnChill is a movie website where you get to see trending movies and tv series",
-        role: "Frontend Development",
-        location: "Rivers, Nigeria 2024",
-        year: "2024",
-        iconOne: <FaReact color="#f9f9f9" />,
-         iconTwo: <BiLogoTypescript  color="#f9f9f9" />,
-         iconThree: <BiLogoTailwindCss color="#f9f9f9" />,
-         iconFour: <FiFramer  color="#f9f9f9" />,
-         preview:"https://flexnchills.vercel.app/",
-         github_link: "https://github.com/Ajinormotor/flexnchill.git",
-         task: [
-            { taskOne: "- Search filter functionality"},
-            { taskTwo: "- Add to favorites functionality"},
-            { taskThree: "- Pagination functionality"},
-         ],
-   bgColor: '#1E293B', 
-textColor: '#F8FAFC',
-tag: 'Web App',
-
-    },
+    
 
    //  mobile app
       {
-      id: '4',
+      id: '3',
      pics: jobtracker,
-    title: "JobTracker (Mobile)",
-    desc: "Mobile app version with offline support and push notifications.",
+    title: "JobTracker ",
+      desc: "A fullstack mobile application for job seekers to track their job applications across different stages (Wishlist, Applied, Interviewing, Offers, etc.) in a drag-and-drop board format, similar to Huntr. Each job is represented as an editable card.",
     role: "Fullstack Development",
     location: "Rivers, Nigeria 2024",
     year: "2025",
-    iconOne: <FaReact color="#f9f9f9" />,
-    iconTwo: <BiLogoTypescript color="#f9f9f9" />,
-    iconThree: <FiFramer color="#f9f9f9" />,
-    iconFour: null,
+   //  iconOne: <FaReact color="#f9f9f9" />,
+   iconOne: 'React-Native',
+   //  iconTwo: <BiLogoTypescript color="#f9f9f9" />,
+   iconTwo: 'Mongodb',
+   //  iconThree: <FiFramer color="#f9f9f9" />,
+   iconThree: 'Nodejs',
+       iconFour: 'Nodejs',
+
     preview: "https://jobtracker-mobile.netlify.app/",
     github_link: "https://github.com/Ajinormotor/jobtracker-mobile.git",
     task: [
@@ -111,4 +104,38 @@ tag: 'Web App',
     textColor: "#F8FAFC",
     tag: "Mobile App",
   },
+
+  {
+        id: "4",
+        pics: timscusine,
+        title: "Timscusine",
+         desc: "A fullstack mobile application for users to buy foods and place orders ",
+        role: "Frontend Development",
+        location: "Rivers, Nigeria 2024",
+    
+        year: "2024",
+      //   iconOne: <TbBrandNextjs  color="#f9f9f9"  />,
+           iconOne: 'React-Native',
+      //   iconTwo: <BiLogoTypescript color="#f9f9f9"   />,
+            iconTwo: 'TailwindCss',
+      //   iconThree: <BiLogoTailwindCss color="#f9f9f9"   />,
+           iconThree: 'Mongodb',
+      //   iconFour: <FiFramer  color="#f9f9f9"  />,
+            iconFour: 'Nodejs',
+        pointOne: "",
+        pointTwo: "",
+        pointThree: "",
+        pointFour: "",
+        preview:"https://ajino-stores.vercel.app/",
+         github_link: "https://github.com/Ajinormotor/ajno_stores.git",
+         task: [
+            { taskOne: "- Created with Nextjs, redux and Typescript"},
+            { taskTwo: "- Add to cart  functionality"},
+            { taskThree: "- Pagination functionality "},
+         ],
+         bgColor: '#FACC15',
+textColor: '#1E293B',
+  tag: "Mobile App",
+    },
+
 ]

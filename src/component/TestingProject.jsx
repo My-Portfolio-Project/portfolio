@@ -5,6 +5,7 @@ import { projectsData } from "../constants/data/projectsData";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import HeadingText from "../resuseable-component/HeadingText";
+import { BiLink, BiPlay } from "react-icons/bi";
 
 // Single Card
 const Card = ({ e, progress, range, targetScale }) => {
@@ -18,6 +19,7 @@ const Card = ({ e, progress, range, targetScale }) => {
   const imageScale = useTransform(scrollYProgress, [0, 0], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
+
   return (
     <motion.div
       ref={ref}
@@ -27,7 +29,7 @@ const Card = ({ e, progress, range, targetScale }) => {
     >
       <Link to={`/projectdetails/${e.id}`}>
         <div
-          className="relative space-y-4 cursor-pointer p-6 rounded-2xl 
+          className="relative space-y-4 cursor-pointer p-1 md:p-3 rounded-2xl 
           shadow-2xl transition duration-500 flex flex-col md:flex-row gap-3"
           style={{
             backgroundColor: e.bgColor || "#1E293B",
@@ -37,7 +39,7 @@ const Card = ({ e, progress, range, targetScale }) => {
           {/* Image */}
           <motion.div
             style={{ scale: imageScale }}
-            className="h-[200px] md:h-[300px] w-full md:max-w-[50%] rounded-xl overflow-hidden "
+            className="h-[260px] w-full md:max-w-[50%] rounded-xl overflow-hidden "
           >
             <img
               src={e.pics}
@@ -47,8 +49,11 @@ const Card = ({ e, progress, range, targetScale }) => {
             />
           </motion.div>
 
-          <motion.div className="md:max-w-[50%] w-full flex flex-col gap-2 ">
+          <motion.div className="md:max-w-[50%] w-full flex flex-col gap-5 ">
             <div className="flex items-center justify-between w-full">
+
+<div className="flex items-center justify-between w-full">
+
 
        
             {/* Title */}
@@ -59,16 +64,19 @@ const Card = ({ e, progress, range, targetScale }) => {
               {e.title}
             </h1>
 
-            {/* <div className={`shadow-md rounded-lg px-2 py-1`}>
-              {e.tag}
-            </div> */}
+                 <div className="flex items-center gap-1">
+              <h1><BiLink  size={24}/></h1>
+                     <h1><BiPlay  size={24}/></h1>
+            </div>
+
+            </div>
 
 
                  </div>
 
             {/* Description */}
             <h1
-              className="text-sm sm:text-base md:text-lg lg:text-xl opacity-80"
+              className="text-sm sm:text-base  opacity-80"
               style={{ color: e.textColor }}
             >
               {e.desc}
@@ -81,20 +89,27 @@ const Card = ({ e, progress, range, targetScale }) => {
               style={{ borderColor: e.textColor }}
             >
               <ul className="flex space-x-2 text-2xl">
-                <li>{e.iconOne}</li>
-                <li>{e.iconTwo}</li>
-                <li>{e.iconThree}</li>
-                <li>{e.iconFour}</li>
+                <h1  className={`px-3 py-1 text-center  rounded-lg text-sm bg-[#fdf1c9] border text-[#2563EB]
+    `}>
+                  {e.iconOne}</h1>
+                               <h1  className={`px-3 py-1 text-center  rounded-lg text-sm bg-[#d2f9e6] border
+            text-[#16A34A]
+    `}> {e.iconTwo}</h1>
+    <h1  className={`px-3 py-1 text-center  rounded-lg text-sm bg-[#daebfd] border
+            text-[#EA580C]
+    `}> {e.iconThree} </h1>
+
+                <h1  className={`px-3 py-1 text-center  rounded-lg text-sm bg-[#637391] 
+            text-white
+    `}> {e.iconFour} </h1>
               </ul>
 
-              <ul>
-                <li>{e.role}</li>
-              </ul>
+          
+       
 
-              <ul>
-                <li>{e.year}</li>
-              </ul>
+
             </div>
+
           </motion.div>
         </div>
       </Link>
@@ -116,6 +131,34 @@ const TestingProject = () => {
   const filteredProjects = projectsData.filter(
     (project) => project.tag === activeTab
   );
+
+    const getBgColor = (status) => {
+
+  if(!status) {
+        return ''
+      }
+
+    switch(status.lowercase()) {
+
+    
+
+      case  'iconOne':
+      return {bgColor:'' };
+          case  'iconTwo':
+      return {bgColor:'' };
+
+          case  'iconThree':
+        return {bgColor:'' };
+
+          case  'iconFour':
+            return {bgColor:'' };
+
+   default:
+    return
+      
+    }
+  }
+
 
   return (
     <div className="w-full">

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { contactData } from "../constants/data/contactData";
 import { Link } from "react-router-dom";
 
-import resumePDf from "../assets/Teitei_CV.pdf"
+import resumePDf from "../assets/WISDOM TEITEI_CV.pdf"
 
 const Hero = () => {
   const words = "You made it here! I'm a fullstack software engineer who builds industry-standard solutions to tackle everyday challenges. I assist tech companies in enhancing their products by designing user-focused and visually captivating cross-platform applications that align perfectly with their business objectives.".split( " " );
@@ -31,7 +31,7 @@ const Hero = () => {
         <h1 className="lg:text-7xl md:text-5xl text-4xl font-extrabold text-white ont-normal">
 
         Hello
-        I&apos;m <span className="">Tei-tei Wisdom.  </span> <br />
+        I&apos;m <span className="">Teitei Wisdom.  </span> <br />
            Software Engineer💻
         
         </h1>

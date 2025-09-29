@@ -101,5 +101,29 @@ export const upperSkillsData = [
        
     },
 
+     {
+        id: "13",
+        title: "Nestjs",
+        color:"yellow",
+        icon: <TbBrandNextjs />
+       
+    },
+
+     {
+        id: "14",
+        title: "Payment Integration",
+        color:"yellow",
+        icon: <TbBrandNextjs />
+       
+    },
+
+     {
+        id: "13",
+        title: "React-Native",
+        color:"yellow",
+        icon: <TbBrandNextjs />
+       
+    },
+
     
 ]
