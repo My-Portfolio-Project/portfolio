@@ -5,7 +5,9 @@ import { projectsData } from "../constants/data/projectsData";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import HeadingText from "../resuseable-component/HeadingText";
-import { BiLink, BiPlay } from "react-icons/bi";
+import {  BiLink, BiPlay } from "react-icons/bi";
+import { DiGithub } from "react-icons/di";
+import { FaGithub } from "react-icons/fa";
 
 // Single Card
 const Card = ({ e, progress, range, targetScale }) => {
@@ -27,9 +29,10 @@ const Card = ({ e, progress, range, targetScale }) => {
       className="sticky top-10 w-full  p-3  border-l-2 border-white 
        rounded-2xl overflow-hidden group "
     >
-      <Link to={`/projectdetails/${e.id}`}>
+      {/* <Link to={`/projectdetails/${e.id}`}> */}
+
         <div
-          className="relative space-y-4 cursor-pointer p-1 md:p-3 rounded-2xl 
+          className="relative space-y-4 cursor-pointer p-2 md:p-3 rounded-2xl 
           shadow-2xl transition duration-500 flex flex-col md:flex-row gap-3"
           style={{
             backgroundColor: e.bgColor || "#1E293B",
@@ -65,8 +68,9 @@ const Card = ({ e, progress, range, targetScale }) => {
             </h1>
 
                  <div className="flex items-center gap-1">
-              <h1><BiLink  size={24}/></h1>
-                     <h1><BiPlay  size={24}/></h1>
+           <Link href={e.preview}> <BiLink  size={24}/> </Link>
+           <h1> <BiPlay  size={24}/> </h1>
+           <Link href={e.github_link}> <FaGithub size={24}/> </Link>
             </div>
 
             </div>
@@ -88,7 +92,7 @@ const Card = ({ e, progress, range, targetScale }) => {
               pt-2 md:items-center gap-2"
               style={{ borderColor: e.textColor }}
             >
-              <ul className="flex space-x-2 text-2xl">
+              <ul className="flex flex-wrap space-x-2 text-2xl gap-2">
                 <h1  className={`px-3 py-1 text-center  rounded-lg text-sm bg-[#fdf1c9] border text-[#2563EB]
     `}>
                   {e.iconOne}</h1>
@@ -112,7 +116,8 @@ const Card = ({ e, progress, range, targetScale }) => {
 
           </motion.div>
         </div>
-      </Link>
+
+      {/* </Link> */}
     </motion.div>
   );
 };
