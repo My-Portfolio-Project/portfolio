@@ -92,7 +92,7 @@ const Card = ({ e, progress, range, targetScale }) => {
               pt-2 md:items-center gap-2"
               style={{ borderColor: e.textColor }}
             >
-              <ul className="flex flex-wrap space-x-2 text-2xl gap-2">
+              <ul className="flex flex-wrap md:gap-1 text-2xl md:gap-2">
                 <h1  className={`px-3 py-1 text-center  rounded-lg text-sm bg-[#fdf1c9] border text-[#2563EB]
     `}>
                   {e.iconOne}</h1>
