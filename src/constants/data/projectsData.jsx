@@ -63,7 +63,7 @@ tag: 'Web App'
         pointTwo: "",
         pointThree: "",
         pointFour: "",
-        preview:"#",
+        preview:"https://expo.dev/preview/update?message=fix%3Aresolved+job+issue&updateRuntimeVersion=1.0.0&createdAt=2025-09-08T12%3A27%3A20.678Z&slug=exp&projectId=6012efe8-adcf-4dc2-9504-6f0ab2a94d61&group=e9027022-403a-475c-9899-d9c0121eeb54",
          github_link: "#",
          task: [
             { taskOne: "- Created with Nextjs, redux and Typescript"},
@@ -94,7 +94,7 @@ tag: 'Web App',
        iconFour: 'Nodejs',
 
     preview: "https://expo.dev/preview/update?message=fix%3Aresolved+job+issue&updateRuntimeVersion=1.0.0&createdAt=2025-09-08T12%3A27%3A20.678Z&slug=exp&projectId=6012efe8-adcf-4dc2-9504-6f0ab2a94d61&group=e9027022-403a-475c-9899-d9c0121eeb54",
-    github_link: "#",
+    github_link: "https://github.com/Ajinormotor/jobtracked-frontend-mobile.git",
     task: [
       { taskOne: "- Offline storage" },
       { taskTwo: "- Push notifications" },
@@ -106,7 +106,7 @@ tag: 'Web App',
   },
 
   {
-        id: "4",
+        id: "5",
         pics: timscusine,
         title: "Timscusine",
          desc: "A fullstack mobile application for users to browse a variety of foods, add them to a cart, and place orders. The platform supports real-time order tracking, secure payments, and an intuitive interface for both customers and restaurant admins.",
@@ -137,5 +137,34 @@ tag: 'Web App',
        textColor: '#1E293B',
        tag: "Mobile App",
     },
+
+      //  mobile app
+      {
+      id: '5',
+     pics: jobtracker,
+    title: "JobTracker ",
+  desc: "A fullstack mobile application for job seekers to track their job applications across different stages (Wishlist, Applied, Interviewing, Offers, etc.) in a drag-and-drop board format, similar to Huntr. Each job is represented as an editable card.",
+    role: "Fullstack Development",
+    location: "Rivers, Nigeria 2024",
+    year: "2025",
+   //  iconOne: <FaReact color="#f9f9f9" />,
+   iconOne: 'React-Native',
+   //  iconTwo: <BiLogoTypescript color="#f9f9f9" />,
+   iconTwo: 'Mongodb',
+   //  iconThree: <FiFramer color="#f9f9f9" />,
+   iconThree: 'Nodejs',
+       iconFour: 'Nodejs',
+
+    preview: "https://expo.dev/preview/update?message=fix%3Aresolved+job+issue&updateRuntimeVersion=1.0.0&createdAt=2025-09-08T12%3A27%3A20.678Z&slug=exp&projectId=6012efe8-adcf-4dc2-9504-6f0ab2a94d61&group=e9027022-403a-475c-9899-d9c0121eeb54",
+    github_link: "https://github.com/Ajinormotor/jobtracked-frontend-mobile.git",
+    task: [
+      { taskOne: "- Offline storage" },
+      { taskTwo: "- Push notifications" },
+      { taskThree: "- Responsive UI" },
+    ],
+    bgColor: "#0f172a",
+    textColor: "#F8FAFC",
+    tag: "Mobile App",
+  },
 
 ]
