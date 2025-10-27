@@ -1,7 +1,7 @@
 
 // import { FaReact } from "react-icons/fa";
 
-import timscusine from "../../../public/timcusine.png"
+import timscusine from "../../../public/timcusine_hero.png"
 import jobtracker from '../../../public/JobTracker.png'
 // import { BiLogoTailwindCss } from "react-icons/bi";
 // import { FiFramer, } from "react-icons/fi";
@@ -30,7 +30,7 @@ export const projectsData = [
          iconFour: 'Nodejs',
          iconFourColor: '',
          preview:"https://project-jobtracker.netlify.app/",
-         github_link: "https://github.com/Ajinormotor/flexnchill.git",
+         github_link: "#",
          task: [
             { taskOne: "- Search filter functionality"},
             { taskTwo: "- Add to favorites functionality"},
@@ -63,7 +63,7 @@ tag: 'Web App'
         pointTwo: "",
         pointThree: "",
         pointFour: "",
-        preview:"https://expo.dev/preview/update?message=fix%3Aresolved+job+issue&updateRuntimeVersion=1.0.0&createdAt=2025-09-08T12%3A27%3A20.678Z&slug=exp&projectId=6012efe8-adcf-4dc2-9504-6f0ab2a94d61&group=e9027022-403a-475c-9899-d9c0121eeb54",
+        preview:"https://timcusine.vercel.app/",
          github_link: "#",
          task: [
             { taskOne: "- Created with Nextjs, redux and Typescript"},
