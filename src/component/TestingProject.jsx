@@ -53,6 +53,7 @@ const Card = ({ e, progress, range, targetScale }) => {
           </motion.div>
 
           <motion.div className="md:max-w-[50%] w-full flex flex-col gap-5 ">
+            
             <div className="flex items-center justify-between w-full">
 
 <div className="flex items-center justify-between w-full">
@@ -68,7 +69,7 @@ const Card = ({ e, progress, range, targetScale }) => {
             </h1>
 
                  <div className="flex items-center gap-1">
-           <Link href={e.preview}> <BiLink  size={24}/> </Link>
+           <a href={e.preview}> <BiLink  size={24}/> </a>
            <h1> <BiPlay  size={24}/> </h1>
            <Link href={e.github_link}> <FaGithub size={24}/> </Link>
             </div>
