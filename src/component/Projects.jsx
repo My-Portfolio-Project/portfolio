@@ -1,88 +1,106 @@
+// import React from "react";
 
-import { Link } from "react-router-dom"
-import { projectsData } from "../constants/data/projectsData"
-import HeadingText from "../resuseable-component/HeadingText"
-import AnimatedText from "../animations/AnimatedText"
+
+import { projectsData } from "../constants/data/projectsData";
 
 const Projects = () => {
   return (
-    <section id="project" className="flex flex-col items-end lg:items-start lg:flex-row  mb-14 justify-between w-full  h-full min-h-[400px]
-    lg:px-4 p-3 md:p-0 gap-8 md:gap-5 my-[4rem]">
-
-<div className="flex  items-start md:items-end ">
-       <HeadingText number="02" title="Project" />
+    <section id="projects" className="max-w-5xl mx-auto px-6 py-24">
+      <div className="mb-16 flex justify-between items-end">
+        <div>
+          <h2 className="text-3xl font-medium text-white tracking-tight mb-4">
+            Featured Work
+          </h2>
+          <p className="text-zinc-500 max-w-lg text-sm">
+            Selected projects that define my approach to problem solving.
+          </p>
+        </div>
+        <a
+          href="#"
+          className="hidden items-center text-xs font-medium text-white hover:text-zinc-300 transition-colors"
+        >
+          View All Repos <i className="w-3 h-3 ml-1">↗</i>
+        </a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-[950px] gap-7
-       w-full  border-l-[2px] border-white px-4 rounded-lg">
+      <div className="space-y-24">
+        {projectsData.map((project) => (
+          <div
+            key={project.id}
+            className={`sticky ${project.top}  bg-gradient-to-b from-[#121212] to-[#0a0a0a] border border-white/10 rounded-3xl overflow-hidden shadow-2xl`}
+          >
+            <div className="grid md:grid-cols-2 gap-0">
+              {/* Left Side */}
+              <div className="p-8 md:p-12 flex flex-col justify-between h-full min-h-[300px]">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="h-px w-6 bg-white/20"></div>
+                    <span className="text-xs font-medium tracking-wider uppercase text-zinc-400">
+                      {project.tag}
+                    </span>
+                  </div>
+                  <h3 className="text-3xl font-medium text-white tracking-tight">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-zinc-400 leading-relaxed">
+                    {project.desc}
+                  </p>
 
-{
-projectsData.map((e) => {
-  return (
+                  {/* Devicon Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="flex items-center gap-1 text-[10px] bg-white/5 border border-white/5 px-2 py-1 rounded text-zinc-300"
+                      >
+                        <i className={`${tag.icon} text-lg`}></i> {tag.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
 
-    <Link to={`/projectdetails/${e.id}`} key={e.id} className=" max-w-[400px]  w-full">
+                {/* Links */}
+                <div className="pt-8 flex gap-2">
+                  {project.preview && (
+                    <a
+                      href={project.preview}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-sm font-medium text-white hover:text-zinc-300 transition-colors"
+                    >
+                      <i className="devicon-chrome-plain text-lg"></i> Preview
+                    </a>
+                  )}
+                  {project.github_link && (
+                    <a
+                      href={project.github_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-sm font-medium text-white hover:text-zinc-300 transition-colors"
+                    >
+                      <i className="devicon-github-original text-lg"></i> Code
+                    </a>
+                  )}
+                </div>
+              </div>
 
-    <div  className=" space-y-4 cursor-pointer group relative">
-
-      <div className="h-[250px] w-full rounded-sm overflow-hidden">
-        <img src={e.pics} alt="project-title"  className="w-full h-full object-cover   group-hover:scale-[1.1]" />
+              {/* Right Side / Visual */}
+              {project.pics && (
+                <div className="bg-[#050505] relative border-l border-white/5 flex items-center justify-center overflow-hidden group">
+                  <img
+                    src={project.pics}
+                    alt={project.title}
+                    className="object-cover w-full h-full group-hover:scale-[1.02] transition-transform duration-500"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
+    </section>
+  );
+};
 
-      <div className="space-y-7">
+export default Projects;
 
-        <h1 className="text-white md:text-4xl text-2xl pb-4 md:pb-8">
-          <AnimatedText>
-          {e.title}
-          </AnimatedText>
-          </h1>
-
-          <h1 className="text-white text-sm sm:text-base md:text-lg lg:text-xl"> 
-             <AnimatedText>
-            {e.desc}
-         </AnimatedText>
-          </h1>
-
-
-              <div className="flex flex-col md:flex-row flex-wrap justify-between items-start md:border-t-[0.5px]  border-white
-md:items-center gap-2">
-
-<ul className="flex space-x-1 p-2">
-  
-          <li className= "text-2xl "> {e.iconOne}</li>
-          <li className= "text-2xl "> {e.iconTwo}</li>
-          <li className= "text-2xl "> {e.iconThree}</li>
-          <li className= "text-2xl "> {e.iconFour}</li>
-        </ul>
-
-        <ul className="flex ">
-        <li className="text-white underline">{e.role} </li>
-        </ul>
-
-     
-        <ul className="flex">
-        <li className="text-white underline"> {e.year} </li>
-        </ul>
-
-      
-</div>
-
-      </div>
-
-    </div>
-
-    </Link>
-  )
-})
-
-}
-
-
-       </div>
-
-
-
-</section>
-  )
-}
-
-export default Projects

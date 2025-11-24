@@ -127,3 +127,76 @@ export const upperSkillsData = [
 
     
 ]
+
+
+
+
+export const skillsData = [
+  {
+    id: "frontend",
+    title: "Frontend Engineering",
+    icon: {
+      name: "layout",
+      color: "text-blue-400",
+      bg: "bg-blue-500/10",
+      border: "border-blue-500/20",
+    },
+    description:
+      "Creating responsive, pixel-perfect interfaces with modern frameworks. Obsessed with interaction design and accessibility.",
+    top: "top-24",
+    bg: "bg-[#0c0c0c]",
+    skills: [
+      { name: "React & Next.js", detail: "Server Components, Hooks", icon: "devicon-react-original colored" },
+      { name: "Vue.js", detail: "Composition API, Transitions", icon: "devicon-vuejs-plain colored" },
+      { name: "React Native", detail: "Expo, Mobile UI", icon: "devicon-react-original colored" },
+      { name: "TypeScript", detail: "Strict Typing, Generics", icon: "devicon-typescript-plain colored" },
+      { name: "Tailwind CSS", detail: "Design Systems", icon: "devicon-tailwindcss-plain colored" },
+      { name: "Framer Motion", detail: "Complex Animations", icon: "devicon-framermotion-original" },
+    ],
+  },
+
+  {
+    id: "backend",
+    title: "Backend Systems",
+    icon: {
+      name: "server",
+      color: "text-purple-400",
+      bg: "bg-purple-500/10",
+      border: "border-purple-500/20",
+    },
+    description:
+      "Architecting robust APIs and database schemas. Focusing on security, data integrity, and low-latency responses.",
+    top: "top-28",
+    bg: "bg-[#0e0e0e]",
+    skills: [
+      { name: "Node.js", detail: "Express, API Development", icon: "devicon-nodejs-plain colored" },
+      { name: "NestJS", detail: "Scalable Backend Architecture", icon: "devicon-nestjs-plain colored" },
+      { name: "PostgreSQL", detail: "Prisma ORM, SQL Optimization", icon: "devicon-postgresql-plain colored" },
+      { name: "Prisma ORM", detail: "Schema Modeling, Migrations", icon: "devicon-prisma-original" },
+      { name: "GraphQL", detail: "Apollo Server, Schemas", icon: "devicon-graphql-plain colored" },
+      { name: "Redis", detail: "Caching Strategies", icon: "devicon-redis-plain colored" },
+      { name: "Go", detail: "Microservices", icon: "devicon-go-plain colored" },
+    ],
+  },
+
+  {
+    id: "devops",
+    title: "DevOps & Cloud",
+    icon: {
+      name: "container",
+      color: "text-orange-400",
+      bg: "bg-orange-500/10",
+      border: "border-orange-500/20",
+    },
+    description:
+      "Automating deployment pipelines and managing cloud infrastructure. Ensuring high availability and rapid iterations.",
+    top: "top-32",
+    bg: "bg-[#101010]",
+    skills: [
+      { name: "Docker", detail: "Containerization", icon: "devicon-docker-plain colored" },
+      { name: "CI/CD", detail: "GitHub Actions", icon: "devicon-github-original" },
+      { name: "AWS", detail: "EC2, S3, Lambda", icon: "devicon-amazonwebservices-original colored" },
+      { name: "Terraform", detail: "Infrastructure as Code", icon: "devicon-terraform-plain colored" },
+    ],
+  },
+];

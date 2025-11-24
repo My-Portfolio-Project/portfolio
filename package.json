@@ -13,6 +13,7 @@
     "@gsap/react": "^2.1.2",
     "@studio-freight/lenis": "^1.0.42",
     "@studio-freight/react-lenis": "^0.0.47",
+    "devicon": "^2.17.0",
     "framer-motion": "^11.15.0",
     "gsap": "^3.13.0",
     "react": "^18.3.1",
