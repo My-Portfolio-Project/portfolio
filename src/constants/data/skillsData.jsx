@@ -132,6 +132,28 @@ export const upperSkillsData = [
 
 
 export const skillsData = [
+
+
+    {
+    id: "devops",
+    title: "DevOps & Cloud",
+    icon: {
+      name: "container",
+      color: "text-orange-400",
+      bg: "bg-orange-500/10",
+      border: "border-orange-500/20",
+    },
+    description:
+      "Automating deployment pipelines and managing cloud infrastructure. Ensuring high availability and rapid iterations.",
+    top: "top-32",
+    bg: "bg-[#101010]",
+    skills: [
+      { name: "Docker", detail: "Containerization", icon: "devicon-docker-plain colored" },
+      { name: "CI/CD", detail: "GitHub Actions", icon: "devicon-github-original" },
+      { name: "AWS", detail: "EC2, S3, Lambda", icon: "devicon-amazonwebservices-original colored" },
+      { name: "Terraform", detail: "Infrastructure as Code", icon: "devicon-terraform-plain colored" },
+    ],
+  },
   {
     id: "frontend",
     title: "Frontend Engineering",
@@ -179,24 +201,5 @@ export const skillsData = [
     ],
   },
 
-  {
-    id: "devops",
-    title: "DevOps & Cloud",
-    icon: {
-      name: "container",
-      color: "text-orange-400",
-      bg: "bg-orange-500/10",
-      border: "border-orange-500/20",
-    },
-    description:
-      "Automating deployment pipelines and managing cloud infrastructure. Ensuring high availability and rapid iterations.",
-    top: "top-32",
-    bg: "bg-[#101010]",
-    skills: [
-      { name: "Docker", detail: "Containerization", icon: "devicon-docker-plain colored" },
-      { name: "CI/CD", detail: "GitHub Actions", icon: "devicon-github-original" },
-      { name: "AWS", detail: "EC2, S3, Lambda", icon: "devicon-amazonwebservices-original colored" },
-      { name: "Terraform", detail: "Infrastructure as Code", icon: "devicon-terraform-plain colored" },
-    ],
-  },
+
 ];

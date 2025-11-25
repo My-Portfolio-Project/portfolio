@@ -46,10 +46,10 @@ const Skills = () => {
               </div>
 
               {/* Right Side */}
-              <div className=" w-full flex flex-wrap gap-2  md:gap-4">
+              <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 {section.skills.map((skill, index) => (
-                  <div key={index} className="bg-white/5 p-4 rounded-lg  max-w-44 w-full
-                  border border-white/5 flex gap-2">
+                  <div key={index} className="bg-white/5 p-4 rounded-lg  md:max-w-44 w-full
+                  border border-white/5 flex flex-col md:flex-row gap-2">
 
                     <div className="flex items-center gap-2">
   <i className={`${skill.icon} text-xl`}></i>
@@ -74,4 +74,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Skills

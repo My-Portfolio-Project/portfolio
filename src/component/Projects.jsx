@@ -29,7 +29,7 @@ const Projects = () => {
             key={project.id}
             className={`sticky ${project.top}  bg-gradient-to-b from-[#121212] to-[#0a0a0a] border border-white/10 rounded-3xl overflow-hidden shadow-2xl`}
           >
-            <div className="grid md:grid-cols-2 gap-0">
+            <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-0">
               {/* Left Side */}
               <div className="p-8 md:p-12 flex flex-col justify-between h-full min-h-[300px]">
                 <div className="space-y-6">
