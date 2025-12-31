@@ -8,8 +8,8 @@ const Projects = () => {
     <section id="projects" className="max-w-5xl mx-auto px-6 py-24">
       <div className="mb-16 flex justify-between items-end">
         <div>
-          <h2 className="text-3xl font-medium text-white tracking-tight mb-4">
-            Featured Work
+          <h2 className="text-3xl font-medium text-white tracking-tight mb-2">
+            Selected Projects
           </h2>
           <p className="text-zinc-500 max-w-lg text-sm">
             Selected projects that define my approach to problem solving.
@@ -68,7 +68,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="flex items-center gap-1 text-sm font-medium text-white hover:text-zinc-300 transition-colors"
                     >
-                      <i className="devicon-chrome-plain text-lg"></i> Preview
+                      <i className="devicon-chrome-plain text-lg"></i> 
                     </a>
                   )}
                   {project.github_link && (
@@ -78,7 +78,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="flex items-center gap-1 text-sm font-medium text-white hover:text-zinc-300 transition-colors"
                     >
-                      <i className="devicon-github-original text-lg"></i> Code
+                      <i className="devicon-github-original text-lg"></i> 
                     </a>
                   )}
                 </div>

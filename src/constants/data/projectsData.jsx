@@ -3,6 +3,7 @@
 
 import timscusine from "../../../public/timcusine_hero.png"
 import jobtracker from '../../../public/JobTracker.png'
+import spotlight  from '../../../public/spotlight.png'
 // import { BiLogoTailwindCss } from "react-icons/bi";
 // import { FiFramer, } from "react-icons/fi";
 // import { TbBrandNextjs } from "react-icons/tb";
@@ -59,9 +60,31 @@ export const projectsData = [
     textColor: "#1E293B",
     tag: "Web App",
   },
+    {
+  id: "3",
+  pics: spotlight,
+  top: "top-40",
+  title: "Spotlight",
+  desc: "A platform built to give professionals visibility by showcasing their work, profiles, and achievements in one place. Spotlight helps designers, developers, writers, and creators present their work professionally and connect with real opportunities.",
+  role: "Fullstack Development",
+  location: "Rivers, Nigeria 2025",
+  year: "2025",
+  tags: [
+    // { name: "Next.js", icon: "devicon-nextjs-original" },
+    { name: "React", icon: "devicon-react-original" },
+    { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+    { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+    { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
+  ],
+  preview: "https://spotlight-flax.vercel.app/",
+  github_link: "https://github.com/Ajinormotor/spotlight",
+  bgColor: "#020617",
+  textColor: "#F8FAFC",
+  tag: "Web App",
+},
 
   {
-    id: "3",
+    id: "4",
     pics: jobtracker,
      top: "top-32",
     title: "JobTracker Mobile",
@@ -82,7 +105,7 @@ export const projectsData = [
   },
 
   {
-    id: "4",
+    id: "5",
     pics: timscusine,
      top: "top-36",
     title: "Timscusine Mobile",
@@ -107,6 +130,8 @@ export const projectsData = [
     textColor: "#1E293B",
     tag: "Mobile App",
   },
+
+
 ];
 
 

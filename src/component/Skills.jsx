@@ -10,8 +10,8 @@ const Skills = () => {
     <section id="skills" className="max-w-5xl mx-auto px-6 py-24">
         
       <div className="mb-16">
-        <h2 className="text-3xl font-medium text-white tracking-tight mb-4">
-          Technical Arsenal
+        <h2 className="text-3xl font-medium text-white tracking-tight mb-2">
+          Tech Stack
         </h2>
         <p className="text-zinc-500 max-w-lg text-sm">
           A curated stack of technologies I use to bring ideas to life, focused on scalability and performance.
@@ -48,8 +48,8 @@ const Skills = () => {
               {/* Right Side */}
               <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 {section.skills.map((skill, index) => (
-                  <div key={index} className="bg-white/5 p-4 rounded-lg  md:max-w-44 w-full
-                  border border-white/5 flex flex-col md:flex-row gap-2">
+                  <div key={index} className="bg-white/5 px-3 py-1 rounded-lg  md:max-w-44 w-full
+                  border border-white/5 flex flex-col md:flex-row gap-3 items-center justify-center">
 
                     <div className="flex items-center gap-2">
   <i className={`${skill.icon} text-xl`}></i>

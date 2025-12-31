@@ -45,7 +45,7 @@ const Hero = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: i * 0.1 }} 
             >
-              <span className="absolute opacity-10 text-center">{word}</span>
+              <span className="absolute opacity-10 text-center tracking-tight">{word}</span>
               {word}
             </motion.span>
           ))}
